@@ -3,6 +3,7 @@ class Solution:
         a=[]
         b=[]
         c=[]
+        
         for i in nums:
             if i<pivot:
                 a.append(i)
@@ -10,7 +11,6 @@ class Solution:
                 b.append(i)
             else:
                 c.append(i)
-                
         a.extend(b)
         a.extend(c)
         return a
