@@ -7,4 +7,5 @@ class Solution:
                 if boxes[j]=="1":
                     k+=abs(j-i)
             ls.append(k)
+            
         return ls
