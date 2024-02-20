@@ -8,7 +8,7 @@ class Solution:
             current_index += k-1  
             current_index %= len(friends_circle)  
             
-            print(friends_circle.pop(current_index))
+            del friends_circle[current_index]
 
             if current_index == len(friends_circle):
                 current_index = 0
