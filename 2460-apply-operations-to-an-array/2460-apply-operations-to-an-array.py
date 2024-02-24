@@ -7,10 +7,9 @@ class Solution:
                     nums[i+1]=0
             except:
                 pass
-        arr=[]
-        for i in nums:
-            if i>0:
-                arr.append(i)
-        for i in range(len(nums)-len(arr)):
-            arr.append(0)
-        return arr
+        cnt=0
+        for i in range(len(nums)):
+            if nums[i]>0:
+                nums[cnt],nums[i]=nums[i],nums[cnt]
+                cnt+=1
+        return nums
