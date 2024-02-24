@@ -1,16 +1,11 @@
 class Solution:
     def minDeletionSize(self, strs: List[str]) -> int:
-        dics={}
-        for i in strs:
-            for j in range(len(i)):
-                try:
-                    dics[j].append(i[j])
-                except:
-                    dics[j]=[i[j]]
-        print(dics)
         cnt=0
-        for val in dics:
-            if dics[val]!=sorted(dics[val]):
+        for i in range(len(strs[0])):
+            arr=[]
+            for j in range(len(strs)):
+                arr.append(strs[j][i])
+            if arr!=sorted(arr):
                 cnt+=1
         return cnt
         
