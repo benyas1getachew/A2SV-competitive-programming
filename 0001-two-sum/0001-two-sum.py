@@ -5,3 +5,4 @@ class Solution:
                 for j in range(len(nums)):
                     if nums[j]==(target-nums[i]) and j != i:
                         return [i,j]
+                        
