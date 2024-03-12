@@ -8,4 +8,3 @@ class Solution:
         for i in dicts:
             arr.append(dicts[i])
         return arr
-            
