@@ -4,8 +4,9 @@ class Solution:
         for i in range(len(heights)):
             dicts[heights[i]]=names[i]
         dicts=dict(sorted(dicts.items(),reverse = True))
-        arr=[]
+        k=0
         for i in dicts:
-            arr.append(dicts[i])
-        return arr
+            names[k]=(dicts[i])
+            k+=1
+        return names
             
