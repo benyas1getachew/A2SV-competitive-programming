@@ -6,9 +6,6 @@
 #         self.right = right
 class Solution:
     def maxAncestorDiff(self, root: Optional[TreeNode]) -> int:
-        if not root:
-            return 0
-        
         def dfs(node,c_min,c_max):
             if not node:
                 return c_max-c_min
