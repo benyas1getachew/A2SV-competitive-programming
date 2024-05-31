@@ -23,5 +23,4 @@ class Solution:
             inOrderTraversal(node.right)
 
         inOrderTraversal(root)
-
         return self.result
