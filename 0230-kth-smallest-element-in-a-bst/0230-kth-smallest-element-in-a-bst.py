@@ -21,6 +21,5 @@ class Solution:
                 return
 
             inOrderTraversal(node.right)
-
         inOrderTraversal(root)
         return self.result
