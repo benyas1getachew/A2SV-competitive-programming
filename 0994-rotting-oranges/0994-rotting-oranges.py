@@ -7,7 +7,6 @@ class Solution:
         queue = deque()
         fresh_count = 0
 
-        # Initialize the queue with all rotten oranges and count fresh oranges
         for r in range(rows):
             for c in range(cols):
                 if grid[r][c] == 2:
@@ -15,7 +14,6 @@ class Solution:
                 elif grid[r][c] == 1:
                     fresh_count += 1
 
-        # If there are no fresh oranges, no time is needed
         if fresh_count == 0:
             return 0
 
@@ -33,5 +31,4 @@ class Solution:
                         queue.append((nx, ny))
                         fresh_count -= 1
 
-        # If there are still fresh oranges left, return -1
         return minutes - 1 if fresh_count == 0 else -1
