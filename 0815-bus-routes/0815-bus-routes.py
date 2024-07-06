@@ -20,7 +20,6 @@ class Solution:
                     continue
                 visited_routes.add(route_id)
 
-                # Check all stops in the current route
                 for stop in routes[route_id]:
                     if stop == target:
                         return buses_taken + 1
