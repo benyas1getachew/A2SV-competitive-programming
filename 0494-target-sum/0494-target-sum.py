@@ -10,7 +10,6 @@ class Solution:
         if subset_sum < 0:
             return 0
 
-        # Initialize dp array
         dp = [0] * (subset_sum + 1)
         dp[0] = 1
         for num in nums:
