@@ -5,7 +5,6 @@ class Solution:
 
         for i in range(n - 2):
             for j in range(n - 2):
-                # Extract the 3x3 submatrix centered around grid[i+1][j+1]
                 max_val = max(grid[x][y] for x in range(i, i + 3) for y in range(j, j + 3))
                 maxLocal[i][j] = max_val
 
